@@ -32,6 +32,7 @@ button {
     height: 2.5em;
     width: 2.5em;
     outline: none;
+    background: #8ad1e3c2;
 }
 
 input.search-bar {
@@ -42,5 +43,40 @@ input.search-bar {
     background: #8ad1e3c2;
     color: white;
     font-family: inherit;
-    font-size: 120%;
+    font-size: 105%;
+    width: calc(100% - 100px);
 }
+
+button:hover {
+    background: #8ad1e3e3
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+      text-transform: capitalize;
+      margin-left: 8px;
+  }
+
+  .weather.loading {
+      visibility: hidden;
+      max-height: 20px;
+      position: relative;
+  }
+
+  .weather.loading:after {
+      visibility: visible;
+      content: "Loading...";
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 20px;
+  }
